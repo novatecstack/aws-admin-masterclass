@@ -1,6 +1,7 @@
 # AWS Certified Solutions Architect Exam (SAA-C03) - Sample Practice Questions
 
-- <b>*Question-01:*</b> An automobile company would like to build a new car-as-a-sensor service by leveraging fully serverless components that are provisioned and managed automatically by AWS. 
+
+- <b>*Question-01:*</b> Novatec Incorporation, an automobile company would like to build a new car-as-a-sensor service by leveraging fully serverless components that are provisioned and managed automatically by AWS. 
 The development team at the carmaker does not want an option that requires the capacity to be manually provisioned, as it does not want to respond manually to changing volumes of sensor data. Given these constraints, which of the following solutions is the BEST fit to develop this car-as-a-sensor service?
      1. Ingest the sensor data in Kinesis Data Streams, which is polled by an application running on an EC2 instance and the data is written into an auto-scaled DynamoDB table for downstream processing
         
