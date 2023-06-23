@@ -1,5 +1,13 @@
-# AWS Certified Solutions Architect Exam (SAA-C03) - Sample Practice Questions
+# AWS Certified Solutions Architect Exam (SAA-C03) - Sample Questions
 
+## Exam Overview
+- Level: Associate
+- Length: 130 minutes to complete the exam
+- Cost: 150 USD
+- Format: 65 questions, either multiple choice or multiple response.
+- Delivery method: Pearson VUE testing center or online proctored exam.
+- For more details, refer [official documentation>>](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+## Sample Questions
 
 - <b>*Question-01:*</b> Novatec Incorporation, an automobile company would like to build a new car-as-a-sensor service by leveraging fully serverless components that are provisioned and managed automatically by AWS. 
 The development team at the carmaker does not want an option that requires the capacity to be manually provisioned, as it does not want to respond manually to changing volumes of sensor data. Given these constraints, which of the following solutions is the BEST fit to develop this car-as-a-sensor service?
