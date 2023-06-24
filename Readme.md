@@ -4,14 +4,15 @@
 This repository contains instructions and assets for hands-on exercises to help you pass AWS Certified SysOps Administrator – Associate and AWS Certified Solutions Architect Exam. The exercises are designed to give you real world use-cases experience and a subset of these exercises comprises the hands-on labs.
 
 In this course, you will learn how to deploy, manage and operate workloads on AWS. This course also help you in grooming your ability to perform the following tasks:
-- Support and maintain AWS workloads according to the AWS Well-Architected Framework
-- Perform operations by using the AWS Management Console and the AWS CLI
+
 - Implement security controls to meet compliance requirements
-- Monitor, log, and troubleshoot systems
 - Apply networking concepts (for example, DNS, TCP/IP, firewalls)
 - Implement architectural requirements (for example, high availability, performance, capacity)
 - Perform business continuity and disaster recovery procedures
+- Monitor, log, and troubleshoot systems
 - Identify, classify, and remediate incidents
+- Support and maintain AWS workloads according to the AWS Well-Architected Framework
+- Perform operations by using the AWS Management Console and the AWS CLI
 
 ## Target Audience
 - IT Admins working in other disciplines
@@ -162,17 +163,18 @@ In this course, you will learn how to deploy, manage and operate workloads on AW
 </details>
 
 <details>
- <summary> <b> Module-09: AWS DevOps Services - Git, CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CloudFormation  💎 </b>  </summary>
+ <summary> <b> Module-09: AWS DevOps Services - CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CloudFormation 💎</b></summary>
   
  *  DevOps Primer + CI/CD, Agile
 
  *  Exploring AWS Developer services
  *  Git Primer – VCS, Branches, Merge, Pull, Fork, Commit, Push actions
- *  Building DevOps pipeline with AWS:
+ *  Building CI CD pipeline with AWS developer services:
     - <b>*AWS CodeCommit*</b>
     - <b>*AWS CodeBuild*</b>
     - <b>*AWS CodeDeploy*</b>
     - <b>*AWS CodePipeline*</b>
+ *  Monitoring and Auditing AWS CI CD pipelines
  *  Introduction to <b>*AWS CloudFormation*</b>
  *  AWS CloudFormation Template Anatomy - Resources, Parameters, Mappings, Conditions, Outputs 
  *  Exploring AWS CloudFormation service features - Stacks | Drift Detection | Changeset
@@ -211,6 +213,5 @@ Copyright © Novatec IT Services, 2021
 </p>
 <p style="float:left; width: 60%; text-align:center;">
 <a rel="license" href="https://novatec.co.in/"><img alt="Novatec IT Services License" style="border-width:0" src="https://github.com/novatecstack/aws-admin-masterclass/assets/121426292/240f8082-4f1b-4155-96ef-a9e588798dd9"  width="200" height="130"/></a><br />This work is licensed under a <a rel="license" href="https://novatec.co.in/">Novatec IT Services Data License</a> | Email: novatectrainings@gmail.com |
-</p>![Logo]()
-
+</p>
 </footer>
