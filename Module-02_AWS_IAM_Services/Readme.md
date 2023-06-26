@@ -25,6 +25,22 @@
       - The number and size of IAM resources in an AWS account are limited.
 
    3. <b>*IAM Roles*</b>
+      - 
    
    4. <b>*IAM Policies*</b>
-       
+      - IAM Policies are set of permissions that you can assign to IAM Identities (Users, Groups & Roles)
+      - As a best practice, you must follow the principle of least privilege: *don’t give more permissions than a user needs*. 
+      - IAM Policies are JSON documents with following attributes: <b>*Version, Id, Statement, Sid, Effect, Principal, Action, NotAction, Resource, NotResource, Condition*</b>
+      - IAM has two types of IAM policies based on who has created it:
+        1. *AWS Managed Polcies (Built-in Policies)*:
+        2. *Customer Managed Policies (Custom Policies)*:
+      - IAM Policies are of three types based on the way identities gets authorized:
+        1. *Identity-based policies (User, Group, Role)*
+        2. *Resource-based policies (S3, SQS)*
+        3. *AWS Organization SCPs  (Service Control Policies)*
+
+    
+
+
+
+
