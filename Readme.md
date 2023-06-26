@@ -118,7 +118,7 @@ In this course, you will learn how to deploy, manage and operate workloads on AW
 
 </details>
 <details>
- <summary> <b> Module-06: AWS Networking and Content Delivery Services - VPC, Transit Gateway, Route 53, ELB 💎 </b>  </summary>
+ <summary> <b> Module-06: AWS Networking and CDN Services - VPC, Transit Gateway, Route 53, ELB 💎 </b>  </summary>
   
  *  Networking Primer – IP Addressing, CIDR, OSI Layers
    
