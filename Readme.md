@@ -1,4 +1,4 @@
-# Amazon Web Services Administration Masterclass Course 
+# Amazon Web Services Masterclass Course 
 </br><img style="border-width:0" src="https://github.com/novatecstack/aws-admin-masterclass/assets/121426292/6648a268-4de9-4d46-aef8-728cfb5c4878"  width="100" height="60"/>
 
 This repository contains instructions and assets for hands-on exercises to help you pass AWS Certified SysOps Administrator – Associate and AWS Certified Solutions Architect Exam. The exercises are designed to give you real world use-cases experience and a subset of these exercises comprises the hands-on labs.
