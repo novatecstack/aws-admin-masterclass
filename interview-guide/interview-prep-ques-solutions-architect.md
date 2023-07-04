@@ -605,3 +605,37 @@ As a solutions architect, which of the following solutions would you recommend t
   3. Use VPC transit gateway to establish a connection between the data center and AWS Cloud
   4. Use AWS Direct Connect to establish a connection between the data center and AWS Cloud
 </details>
+
+<details>
+<summary> <b>Answers</b></summary>
+
+  *  Question 01 - (2)
+     - Ingest the sensor data in an Amazon SQS standard queue, which is polled by a Lambda function in batches and the data is written into an auto-scaled DynamoDB table for downstream processing)
+  *  Question 02 - (3) & (4)
+     - Use multipart uploads for faster file uploads into the destination S3 bucket
+     - Use Amazon S3 Transfer Acceleration to enable faster file uploads into the destination S3 bucket
+  *  Question 03 - (3)
+     - Amazon FSx for Lustre
+  *  Question 04 -
+  *  Question 05 -
+  *  Question 06 -
+  *  Question 07 -
+  *  Question 08 -
+  *  Question 09 -
+  *  Question 10 -
+  *  Question 11 -
+  *  Question 12 -
+  *  Question 13 -
+  *  Question 14 -
+  *  Question 15 -
+  *  Question 16 -
+  *  Question 17 -
+  *  Question 18 -
+  *  Question 19 -
+  *  Question 20 -
+  *  Question 21 -
+  *  Question 22 -
+  *  Question 23 -
+  *  Question 24 -
+  *  Question 25 -
+</details>
