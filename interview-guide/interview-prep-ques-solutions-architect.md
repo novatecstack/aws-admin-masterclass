@@ -402,86 +402,206 @@ Which of the following is the BEST solution for this use-case?
 </details>
 
 <details>
-<summary> <b>Question-34</b>:
+<summary> <b>Question-34</b>: The payroll department at a company initiates several computationally intensive workloads on EC2 instances at a designated hour on the last day of every month. The payroll department has noticed a trend of severe performance lag during this hour. The engineering team has figured out a solution by using Auto Scaling Group for these EC2 instances and making sure that 10 EC2 instances are available during this peak usage hour. For normal operations only 2 EC2 instances are enough to cater to the workload.</br>
+As a solutions architect, which of the following steps would you recommend to implement the solution?
 </summary>
+
+  1. Configure your Auto Scaling group by creating a simple tracking policy and setting the instance count to 10 at the designated hour. This causes the scale-out to happen before peak traffic kicks in at the designated hour
+  
+  2. Configure your Auto Scaling group by creating a scheduled action that kicks-off at the designated hour on the last day of the month. Set the min count as well as the max count of instances to 10. This causes the scale-out to happen before peak traffic kicks in at the designated hour
+  3. Configure your Auto Scaling group by creating a scheduled action that kicks-off at the designated hour on the last day of the month. Set the desired capacity of instances to 10. This causes the scale-out to happen before peak traffic kicks in at the designated hour
+  4. Configure your Auto Scaling group by creating a target tracking policy and setting the instance count to 10 at the designated hour. This causes the scale-out to happen before peak traffic kicks in at the designated hour
 </details>
 
 <details>
-<summary> <b>Question-35</b>:
+<summary> <b>Question-35</b>: A new DevOps engineer has just joined a development team and wants to understand the replication capabilities for RDS Multi-AZ as well as RDS Read-replicas.</br>
+Which of the following correctly summarizes these capabilities for the given database?
 </summary>
+
+  1. Multi-AZ follows asynchronous replication and spans one Availability Zone within a single region. Read replicas follow synchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region
+  
+  2. Multi-AZ follows asynchronous replication and spans at least two Availability Zones within a single region. Read replicas follow synchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region
+  3. Multi-AZ follows asynchronous replication and spans at least two Availability Zones within a single region. Read replicas follow asynchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region
+  4. Multi-AZ follows synchronous replication and spans at least two Availability Zones within a single region. Read replicas follow asynchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region
 </details>
 
 <details>
-<summary> <b>Question-36</b>:
+<summary> <b>Question-36</b>: CloudFront offers a multi-tier cache in the form of regional edge caches that improve latency. However, there are certain content types that bypass the regional edge cache, and go directly to the origin.</br>
+Which of the following content types skip the regional edge cache? (Select two)
 </summary>
+
+  1. Dynamic content, as determined at request time (cache-behavior configured to forward all headers)
+  
+  2. Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin
+  3. E-commerce assets such as product photos
+  4. User-generated videos
+  5. Static content such as style sheets, JavaScript files
 </details>
 
 <details>
-<summary> <b>Question-37</b>:
+<summary> <b>Question-37</b>: An IT consultant is helping the owner of a medium-sized business set up an AWS account. What are the security recommendations he must follow while creating the AWS account root user? (Select two)
 </summary>
+
+  1. Create AWS account root user access keys and share those keys only with the business owner
+  
+  2. Send an email to the business owner with details of the login username and password for the AWS root user. This will help the business owner to troubleshoot any login issues in future
+  3. Encrypt the access keys and save them on Amazon S3
+  4. Enable Multi Factor Authentication (MFA) for the AWS account root user account
+  5. Create a strong password for the AWS account root user
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-38</b>: A retail company uses Amazon EC2 instances, API Gateway, Amazon RDS, Elastic Load Balancer and CloudFront services. To improve the security of these services, the Risk Advisory group has suggested a feasibility check for using the Amazon GuardDuty service.</br>
+Which of the following would you identify as data sources supported by GuardDuty?
 </summary>
+
+  1. VPC Flow Logs, DNS logs, CloudTrail events
+  
+  2. CloudFront logs, API Gateway logs, CloudTrail events
+  3. VPC Flow Logs, API Gateway logs, S3 access logs
+  4. ELB logs, DNS logs, CloudTrail events
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-39</b>: The engineering team at a Spanish professional football club has built a notification system for its website using Amazon SNS notifications which are then handled by a Lambda function for end-user delivery. During the off-season, the notification systems need to handle about 100 requests per second. During the peak football season, the rate touches about 5000 requests per second and it is noticed that a significant number of the notifications are not being delivered to the end-users on the website.</br>
+As a solutions architect, which of the following would you suggest as the BEST possible solution to this issue?
 </summary>
+
+  1. The engineering team needs to provision more servers running the SNS service.
+  
+  2. Amazon SNS has hit a scalability limit, so the team needs to contact AWS support to raise the account limit.
+  3. Amazon SNS message deliveries to AWS Lambda have crossed the account concurrency quota for Lambda, so the team needs to contact AWS support to raise the account limit.
+  4. The engineering team needs to provision more servers running the Lambda service.
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-40</b>: A geological research agency maintains the seismological data for the last 100 years. The data has a velocity of 1GB per minute. You would like to store the data with only the most relevant attributes to build a predictive model for earthquakes.</br>
+What AWS services would you use to build the most cost-effective solution with the LEAST amount of infrastructure maintenance?
 </summary>
+
+  1. Ingest the data in Kinesis Data Firehose and use an intermediary Lambda function to filter and transform the incoming stream before the output is dumped on S3
+  
+  2. Ingest the data in a Spark Streaming Cluster on EMR use Spark Streaming transformations before writing to S3
+  3. Ingest the data in Kinesis Data Analytics and use SQL queries to filter and transform the data before writing to S3
+  4. Ingest the data in Kinesis Data Streams and use an intermediary Lambda function to filter and transform the incoming stream before the output is dumped on S3
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-41</b>: The sourcing team at the US headquarters of a global e-commerce company is preparing a spreadsheet of the new product catalog. The spreadsheet is saved on an EFS file system created in us-east-1 region. The sourcing team counterparts from other AWS regions such as Asia Pacific and Europe also want to collaborate on this spreadsheet.</br>
+As a solutions architect, what is your recommendation to enable this collaboration with the LEAST amount of operational overhead?
 </summary>
+
+  1. The spreadsheet will have to be copied into EFS file systems of other AWS regions as EFS is a regional service and it does not allow access from other AWS regions
+  
+  2. The spreadsheet will have to be copied in Amazon S3 which can then be accessed from any AWS region
+  3. The spreadsheet data will have to be moved into an RDS MySQL database which can then be accessed from any AWS region
+  4. The spreadsheet on the EFS file system can be accessed in other AWS regions by using an inter-region VPC peering connection
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-42</b>: An IT security consultancy is working on a solution to protect data stored in S3 from any malicious activity as well as check for any vulnerabilities on EC2 instances.</br>
+As a solutions architect, which of the following solutions would you suggest to help address the given requirement?
 </summary>
+
+  1. Use Amazon GuardDuty to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon GuardDuty to check for vulnerabilities on EC2 instances
+  
+  2. Use Amazon GuardDuty to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon Inspector to check for vulnerabilities on EC2 instances
+  3. Use Amazon Inspector to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon Inspector to check for vulnerabilities on EC2 instances
+  4. Use Amazon Inspector to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon GuardDuty to check for vulnerabilities on EC2 instances
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-43</b>: A company uses Amazon S3 buckets for storing sensitive customer data. The company has defined different retention periods for different objects present in the Amazon S3 buckets, based on the compliance requirements. But, the retention rules do not seem to work as expected.</br>
+Which of the following options represent a valid configuration for setting up retention periods for objects in Amazon S3 buckets? (Select two)
 </summary>
+
+  1. You cannot place a retention period on an object version through a bucket default setting
+  
+  2. Different versions of a single object can have different retention modes and periods
+  3. The bucket default settings will override any explicit retention mode or period you request on an object version
+  4. When you use bucket default settings, you specify a Retain Until Date for the object version
+  5. When you apply a retention period to an object version explicitly, you specify a Retain Until Date for the object version
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-44</b>: A company has a web application that runs 24*7 in the production environment. The development team at the company runs a clone of the same application in the dev environment for up to 8 hours every day. The company wants to build the MOST cost-optimal solution by deploying these applications using the best-fit pricing options for EC2 instances.</br>What would you recommend?
 </summary>
+
+  1. Use on-demand EC2 instances for the production application and spot instances for the dev application
+  
+  2. Use reserved EC2 instances for the production application and spot instances for the dev application
+  3. Use reserved EC2 instances for the production application and on-demand instances for the dev application
+  4. Use reserved EC2 instances for the production application and spot block instances for the dev application
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-45</b>: A technology blogger wants to write a review on the comparative pricing for various storage types available on AWS Cloud. The blogger has created a test file of size 1GB with some random data. Next he copies this test file into AWS S3 Standard storage class, provisions an EBS volume (General Purpose SSD (gp2)) with 100GB of provisioned storage and copies the test file into the EBS volume, and lastly copies the test file into an EFS Standard Storage filesystem. At the end of the month, he analyses the bill for costs incurred on the respective storage types for the test file.</br>
+What is the correct order of the storage charges incurred for the test file on these three storage types?
 </summary>
+
+  1. Cost of test file storage on EFS < Cost of test file storage on S3 Standard < Cost of test file storage on EBS
+  
+  2. Cost of test file storage on EBS < Cost of test file storage on S3 Standard < Cost of test file storage on EFS
+  3. Cost of test file storage on S3 Standard < Cost of test file storage on EBS < Cost of test file storage on EFS
+  4. Cost of test file storage on S3 Standard < Cost of test file storage on EFS < Cost of test file storage on EBS
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-46</b>: The flagship application for a gaming company connects to an Amazon Aurora database and the entire technology stack is currently deployed in the United States. Now, the company has plans to expand to Europe and Asia for its operations. It needs the games table to be accessible globally but needs the users and games_played tables to be regional only.</br>
+How would you implement this with minimal application refactoring?
 </summary>
+
+  1. Use a DynamoDB global table for the games table and use Amazon Aurora for the users and games_played tables
+  
+  2. Use an Amazon Aurora Global Database for the games table and use Amazon Aurora for the users and games_played tables
+  3. Use a DynamoDB global table for the games table and use DynamoDB tables for the users and games_played tables
+  4. Use an Amazon Aurora Global Database for the games table and use DynamoDB tables for the users and games_played tables
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-47</b>: An ivy-league university is assisting NASA to find potential landing sites for exploration vehicles of unmanned missions to our neighboring planets. The university uses High Performance Computing (HPC) driven application architecture to identify these landing sites.</br>
+Which of the following EC2 instance topologies should this application be deployed on?
 </summary>
+
+  1. The EC2 instances should be deployed in a partition placement group so that distributed workloads can be handled effectively
+  
+  2. The EC2 instances should be deployed in a spread placement group so that there are no correlated failures
+  3. The EC2 instances should be deployed in an Auto Scaling group so that application meets high availability requirements
+  4. The EC2 instances should be deployed in a cluster placement group so that the underlying workload can benefit from low network latency and high network throughput
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-48</b>: A retail company has set up a Network Load Balancer (NLB) having a target group that is configured to use an Amazon EC2 Auto Scaling group with multiple EC2 instances (across 3 Availability Zones) that run the web service. The company is getting poor feedback from its customers regarding the application's availability as the NLB is unable to detect HTTP errors for the application. These HTTP errors require a manual restart of the EC2 instances that run the web service.</br>
+The company has hired you as an AWS Certified Solutions Architect Associate to build the best-fit solution that does not require custom development/scripting effort. Which of the following will you suggest?
 </summary>
+
+  1. Set up a cron job on the EC2 instances to inspect the web application's logs at a regular frequency. When HTTP errors are detected, force an application restart
+  
+  2. Set up a CloudWatch alarm to monitor the UnhealthyHostCount metric for the NLB. Leverage the Auto Scaling group to replace unhealthy instances when the alarm is in the ALARM state
+  3. Configure HTTP health checks on the Network Load Balancer (NLB) by pointing to the URL of the application. Leverage the Auto Scaling group to replace unhealthy instances
+  4. Replace the Network Load Balancer (NLB) with an Application Load Balancer (ALB) and configure HTTP health checks on the ALB by pointing to the URL of the application. Leverage the Auto Scaling group to replace unhealthy instances
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-49</b>: The engineering team at an e-commerce company wants to establish a dedicated, encrypted, low latency, and high throughput connection between its data center and AWS Cloud. The engineering team has set aside sufficient time to account for the operational overhead of establishing this connection.</br>
+As a solutions architect, which of the following solutions would you recommend to the company?
 </summary>
+
+  1. Use site-to-site VPN to establish a connection between the data center and AWS Cloud
+  
+  2. Use AWS Direct Connect plus VPN to establish a connection between the data center and AWS Cloud
+  3. Use VPC transit gateway to establish a connection between the data center and AWS Cloud
+  4. Use AWS Direct Connect to establish a connection between the data center and AWS Cloud
 </details>
 
 <details>
-<summary> <b>Question-38</b>:
+<summary> <b>Question-50</b>: The engineering team at an e-commerce company wants to establish a dedicated, encrypted, low latency, and high throughput connection between its data center and AWS Cloud. The engineering team has set aside sufficient time to account for the operational overhead of establishing this connection.</br>
+As a solutions architect, which of the following solutions would you recommend to the company?
 </summary>
+
+  1. Use site-to-site VPN to establish a connection between the data center and AWS Cloud
+  
+  2. Use AWS Direct Connect plus VPN to establish a connection between the data center and AWS Cloud
+  3. Use VPC transit gateway to establish a connection between the data center and AWS Cloud
+  4. Use AWS Direct Connect to establish a connection between the data center and AWS Cloud
 </details>
