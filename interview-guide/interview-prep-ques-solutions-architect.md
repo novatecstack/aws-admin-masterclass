@@ -64,7 +64,7 @@ Given this scenario, which of the following is correct regarding the charges for
 </details>
 
 <details>
-<summary> <b>Question-06</b>:A major bank is using SQS to migrate several core banking applications to the cloud to ensure high availability and cost efficiency while simplifying administrative complexity and overhead. The development team at the bank expects a peak rate of about 1000 messages per second to be processed via SQS. It is important that the messages are processed in order.</br>
+<summary> <b>Question-06</b>: A major bank is using SQS to migrate several core banking applications to the cloud to ensure high availability and cost efficiency while simplifying administrative complexity and overhead. The development team at the bank expects a peak rate of about 1000 messages per second to be processed via SQS. It is important that the messages are processed in order.</br>
 Which of the following options can be used to implement this system?
 </summary>
 
@@ -88,77 +88,100 @@ As a Solutions Architect, which of the following will you suggest for the compan
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-08</b>: The engineering team at an in-home fitness company is evaluating multiple in-memory data stores with the ability to power its on-demand, live leaderboard. The company's leaderboard requires high availability, low latency, and real-time processing to deliver customizable user data for the community of users working out together virtually from the comfort of their home.</br>
+As a solutions architect, which of the following solutions would you recommend? (Select two)
+</summary>
+
+  1. Power the on-demand, live leaderboard using ElastiCache Redis as it meets the in-memory, high availability, low latency requirements
+  
+  2. Power the on-demand, live leaderboard using AWS Neptune as it meets the in-memory, high availability, low latency requirements
+  3. Power the on-demand, live leaderboard using RDS Aurora as it meets the in-memory, high availability, low latency requirements
+  4. Power the on-demand, live leaderboard using DynamoDB with DynamoDB Accelerator (DAX) as it meets the in-memory, high availability, low latency requirements
+  5. Power the on-demand, live leaderboard using DynamoDB as it meets the in-memory, high availability, low latency requirements
+</details>
+
+<details>
+<summary> <b>Question-09</b>: A company manages a multi-tier social media application that runs on EC2 instances behind an Application Load Balancer. The instances run in an EC2 Auto Scaling group across multiple Availability Zones and use an Amazon Aurora database. As a solutions architect, you have been tasked to make the application more resilient to periodic spikes in request rates.</br>
+Which of the following solutions would you recommend for the given use-case? (Select two)
+</summary>
+
+  1. Use Aurora Replica
+  
+  2. Use AWS Shield
+  3. Use AWS Global Accelerator
+  4. Use AWS Direct Connect
+  5. Use CloudFront distribution in front of the Application Load Balancer
+</details>
+
+<details>
+<summary> <b>Question-10</b>: An audit department generates and accesses the audit reports only twice in a financial year. The department uses AWS Step Functions to orchestrate the report creating process that has failover and retry scenarios built into the solution. The underlying data to create these audit reports is stored on S3, runs into hundreds of Terabytes and should be available with millisecond latency. </br>
+As a solutions architect, which is the MOST cost-effective storage class that you would recommend to be used for this use-case?
+</summary>
+
+  1. Amazon S3 Glacier Deep Archive
+  
+  2. Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
+  3. Amazon S3 Standard
+  4. Amazon S3 Intelligent-Tiering (S3 Intelligent-Tiering)
+</details>
+
+<details>
+<summary> <b>Question-11</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-12</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-13</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-14</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-15</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-16</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-17</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-18</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-19</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-20</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-21</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-02</b>:
-</summary>
-</details>
-
-<details>
-<summary> <b>Question-02</b>:
-</summary>
-</details>
-
-<details>
-<summary> <b>Question-02</b>:
-</summary>
-</details>
-
-<details>
-<summary> <b>Question-02</b>:
+<summary> <b>Question-22</b>:
 </summary>
 </details>
 
