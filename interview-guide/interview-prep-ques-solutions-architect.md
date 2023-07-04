@@ -126,38 +126,88 @@ As a solutions architect, which is the MOST cost-effective storage class that yo
 </details>
 
 <details>
-<summary> <b>Question-11</b>:
+<summary> <b>Question-11</b>: An organization wants to delegate access to a set of users from the development environment so that they can access some resources in the production environment which is managed under another AWS account.</br>
+As a solutions architect, which of the following steps would you recommend?
 </summary>
+  
+  1. Both IAM roles and IAM users can be used interchangeably for cross-account access
+  
+  2. Create new IAM user credentials for the production environment and share these credentials with the set of users from the development environment
+  3. It is not possible to access cross-account resources
+  4. Create a new IAM role with the required permissions to access the resources in the production environment. The users can then assume this IAM role while accessing the resources from the production environment 
 </details>
 
 <details>
-<summary> <b>Question-12</b>:
+<summary> <b>Question-12</b>: A telecom company operates thousands of hardware devices like switches, routers, cables, etc. The real-time status data for these devices must be fed into a communications application for notifications. Simultaneously, another analytics application needs to read the same real-time status data and analyze all the connecting lines that may go down because of any device failures.</br>
+As a Solutions Architect, which of the following solutions would you suggest, so that both the applications can consume the real-time status data concurrently?
 </summary>
+
+  1. Amazon Simple Queue Service (SQS) with Amazon Simple Email Service (Amazon SES)
+  
+  2. Amazon Simple Notification Service (SNS)
+  3. Amazon Kinesis Data Streams
+  4. Amazon Simple Queue Service (SQS) with Amazon Simple Notification Service (SNS)
 </details>
 
 <details>
-<summary> <b>Question-13</b>:
+<summary> <b>Question-13</b>: A gaming company is looking at improving the availability and performance of its global flagship application which utilizes UDP protocol and needs to support fast regional failover in case an AWS Region goes down. The company wants to continue using its own custom DNS service. </br>
+Which of the following AWS services represents the best solution for this use-case?
 </summary>
+
+  1. Amazon Route 53
+  
+  2. AWS Global Accelerator
+  3. Amazon CloudFront
+  4. AWS Elastic Load Balancing (ELB)
 </details>
 
 <details>
-<summary> <b>Question-14</b>:
+<summary> <b>Question-14</b>: The IT department at a consulting firm is conducting a training workshop for new developers. As part of an evaluation exercise on Amazon S3, the new developers were asked to identify the invalid storage class lifecycle transitions for objects stored on S3. </br>
+Can you spot the INVALID lifecycle transitions from the options below? (Select two)
 </summary>
+
+  1. S3 Intelligent-Tiering => S3 Standard
+  
+  2. S3 Standard => S3 Intelligent-Tiering
+  3. S3 One Zone-IA => S3 Standard-IA
+  4. S3 Standard-IA => S3 One Zone-IA
+  5. S3 Standard-IA => S3 Intelligent-Tiering
 </details>
 
 <details>
-<summary> <b>Question-15</b>:
+<summary> <b>Question-15</b>: A Big Data analytics company wants to set up an AWS cloud architecture that throttles requests in case of sudden traffic spikes. The company is looking for AWS services that can be used for buffering or throttling to handle such traffic variations. </br>
+Which of the following services can be used to support this requirement?
 </summary>
+
+  1. Amazon API Gateway, Amazon SQS and Amazon Kinesis
+  
+  2. Elastic Load Balancer, Amazon SQS, AWS Lambda
+  3. Amazon Gateway Endpoints, Amazon SQS and Amazon Kinesis
+  4. Amazon SQS, Amazon SNS and AWS Lambda
 </details>
 
 <details>
-<summary> <b>Question-16</b>:
+<summary> <b>Question-16</b>: A gaming company uses Amazon Aurora as its primary database service. The company has now deployed 5 multi-AZ read replicas to increase the read throughput and for use as failover target. The replicas have been assigned the following failover priority tiers and corresponding instance sizes are given in parentheses: tier-1 (16TB), tier-1 (32TB), tier-10 (16TB), tier-15 (16TB), tier-15 (32TB). </br>
+In the event of a failover, Amazon Aurora will promote which of the following read replicas?
 </summary>
+
+  1. Tier-10 (16TB)
+  
+  2. Tier-15 (32TB)
+  3. Tier-1 (16TB)
+  4. Tier-1 (32TB)
 </details>
 
 <details>
-<summary> <b>Question-17</b>:
+<summary> <b>Question-17</b>: A healthcare company uses its on-premises infrastructure to run legacy applications that require specialized customizations to the underlying Oracle database as well as its host operating system (OS). The company also wants to improve the availability of the Oracle database layer. The company has hired you as an AWS Certified Solutions Architect Associate to build a solution on AWS that meets these requirements while minimizing the underlying infrastructure maintenance effort. </br>
+Which of the following options represents the best solution for this use case?
 </summary>
+
+  1. Leverage multi-AZ configuration of RDS Custom for Oracle that allows the database administrators to access and customize the database environment and the underlying operating system
+  
+  2. Leverage multi-AZ configuration of RDS for Oracle that allows the database administrators to access and customize the database environment and the underlying operating system
+  3. Leverage cross AZ read-replica configuration of RDS for Oracle that allows the database administrators to access and customize the database environment and the underlying operating system
+  4. Deploy the Oracle database layer on multiple EC2 instances spread across two Availability Zones (AZ). This deployment configuration guarantees high availability and also allows the database administrators to access and customize the database environment and the underlying operating system
 </details>
 
 <details>
