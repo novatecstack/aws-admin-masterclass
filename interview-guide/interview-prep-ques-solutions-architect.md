@@ -211,27 +211,277 @@ Which of the following options represents the best solution for this use case?
 </details>
 
 <details>
-<summary> <b>Question-18</b>:
+<summary> <b>Question-18</b>: One of the biggest football leagues in Europe has granted the distribution rights for live streaming its matches in the US to a silicon valley based streaming services company. As per the terms of distribution, the company must make sure that only users from the US are able to live stream the matches on their platform. Users from other countries in the world must be denied access to these live-streamed matches. </br>
+Which of the following options would allow the company to enforce these streaming restrictions? (Select two)
+</summary>
+
+  1. Use georestriction to prevent users in specific geographic locations from accessing content that you're distributing through a CloudFront web distribution
+  
+  2. Use Route 53 based geolocation routing policy to restrict distribution of content to only the locations in which you have distribution rights
+  3. Use Route 53 based failover routing policy to restrict distribution of content to only the locations in which you have distribution rights
+  4. Use Route 53 based latency routing policy to restrict distribution of content to only the locations in which you have distribution rights
+  5. Use Route 53 based weighted routing policy to restrict distribution of content to only the locations in which you have distribution rights
+</details>
+
+<details>
+<summary> <b>Question-19</b>: A financial services company uses Amazon GuardDuty for analyzing its AWS account metadata to meet the compliance guidelines. However, the company has now decided to stop using GuardDuty service. All the existing findings have to be deleted and cannot persist anywhere on AWS Cloud.</br>
+Which of the following techniques will help the company meet this requirement?
+</summary>
+
+  1. De-register the service under services tab
+  
+  2. Suspend the service in the general settings
+  3. Raise a service request with Amazon to completely delete the data from all their backups
+  4. Disable the service in the general settings
+</details>
+
+<details>
+<summary> <b>Question-20</b>: A social photo-sharing company uses Amazon S3 to store the images uploaded by the users. These images are kept encrypted in S3 by using AWS-KMS and the company manages its own Customer Master Key (CMK) for encryption. A member of the DevOps team accidentally deleted the CMK a day ago, thereby rendering the user's photo data unrecoverable. You have been contacted by the company to consult them on possible solutions to this crisis. </br>
+As a solutions architect, which of the following steps would you recommend to solve this issue?
+</summary>
+
+  1. As the CMK was deleted a day ago, it must be in the 'pending deletion' status and hence you can just cancel the CMK deletion and recover the key
+  
+  2. The company should issue a notification on its web application informing the users about the loss of their data
+  3. The CMK can be recovered by the AWS root account user
+  4. Contact AWS support to retrieve the CMK from their backup
+</details>
+
+<details>
+<summary> <b>Question-21</b>: A data analytics company measures what the consumers watch and what advertising they’re exposed to. This real-time data is ingested into its on-premises data center and subsequently, the daily data feed is compressed into a single file and uploaded on Amazon S3 for backup. The typical compressed file size is around 2 GB.</br>
+Which of the following is the fastest way to upload the daily compressed file into S3?
+</summary>
+
+  1. Upload the compressed file using multipart upload with S3 transfer acceleration
+  
+  2. Upload the compressed file using multipart upload
+  3. FTP the compressed file into an EC2 instance that runs in the same region as the S3 bucket. Then transfer the file from the EC2 instance into the S3 bucket
+  4. Upload the compressed file in a single operation
+</details>
+
+<details>
+<summary> <b>Question-22</b>: A healthcare startup needs to enforce compliance and regulatory guidelines for objects stored in Amazon S3. One of the key requirements is to provide adequate protection against accidental deletion of objects.</summary>br
+As a solutions architect, what are your recommendations to address these guidelines? (Select two)
+</summary>
+
+  1. Establish a process to get managerial approval for deleting S3 objects
+  
+  2. Change the configuration on AWS S3 console so that the user needs to provide additional confirmation while deleting any S3 object
+  3. Enable MFA delete on the bucket
+  4. Enable versioning on the bucket
+  5. Create an event trigger on deleting any S3 object. The event invokes an SNS notification via email to the IT manager
+</details>
+
+<details>
+<summary> <b>Question-23</b>: A media agency stores its re-creatable assets on Amazon S3 buckets. The assets are accessed by a large number of users for the first few days and the frequency of access falls down drastically after a week. Although the assets would be accessed occasionally after the first week, but they must continue to be immediately accessible when required. The cost of maintaining all the assets on S3 storage is turning out to be very expensive and the agency is looking at reducing costs as much as possible.</br>
+As a Solutions Architect, can you suggest a way to lower the storage costs while fulfilling the business requirements?
+</summary>
+
+  1. Configure a lifecycle policy to transition the objects to Amazon S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days
+  
+  2. Configure a lifecycle policy to transition the objects to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days
+  3. Configure a lifecycle policy to transition the objects to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) after 7 days
+  4. Configure a lifecycle policy to transition the objects to Amazon S3 Standard-Infrequent Access (S3 Standard-IA) after 7 days
+</details>
+
+<details>
+<summary> <b>Question-24</b>: A new DevOps engineer has joined a large financial services company recently. As part of his onboarding, the IT department is conducting a review of the checklist for tasks related to AWS Identity and Access Management.</br>
+As a solutions architect, which best practices would you recommend (Select two)?
+</summary>
+
+  1. Configure AWS CloudTrail to log all IAM actions
+  
+  2. Use user credentials to provide access specific permissions for Amazon EC2 instances
+  3. Enable MFA for privileged users
+  4. Create a minimum number of accounts and share these account credentials among employees
+  5. Grant maximum privileges to avoid assigning privileges again
+</details>
+
+<details>
+<summary> <b>Question-25</b>: The engineering team at a data analytics company has observed that its flagship application functions at its peak performance when the underlying EC2 instances have a CPU utilization of about 50%. The application is built on a fleet of EC2 instances managed under an Auto Scaling group. The workflow requests are handled by an internal Application Load Balancer that routes the requests to the instances.</br>
+As a solutions architect, what would you recommend so that the application runs near its peak performance state?
+</summary>
+
+  1. Configure the Auto Scaling group to use a Cloudwatch alarm triggered on a CPU utilization threshold of 50%
+  2. Configure the Auto Scaling group to use simple scaling policy and set the CPU utilization as the target metric with a target value of 50%
+  3. Configure the Auto Scaling group to use target tracking policy and set the CPU utilization as the target metric with a target value of 50%
+  4. Configure the Auto Scaling group to use step scaling policy and set the CPU utilization as the target metric with a target value of 50%
+</details>
+
+<details>
+<summary> <b>Question-26</b>: A software engineering intern at an e-commerce company is documenting the process flow to provision EC2 instances via the Amazon EC2 API. These instances are to be used for an internal application that processes HR payroll data. He wants to highlight those volume types that cannot be used as a boot volume.</br>
+Can you help the intern by identifying those storage volume types that CANNOT be used as boot volumes while creating the instances? (Select two)
+</summary>
+
+  1. Cold HDD (sc1)
+  2. Provisioned IOPS SSD (io1)
+  3. Throughput Optimized HDD (st1)
+  4. General Purpose SSD (gp2)
+  5. Instance Store
+</details>
+
+<details>
+<summary> <b>Question-27</b>: The product team at a startup has figured out a market need to support both stateful and stateless client-server communications via the APIs developed using its platform. You have been hired by the startup as a solutions architect to build a solution to fulfill this market need using AWS API Gateway.</br>
+Which of the following would you identify as correct?
+</summary>
+
+  1. API Gateway creates RESTful APIs that enable stateful client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateless, full-duplex communication between client and server
+  2. API Gateway creates RESTful APIs that enable stateless client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateless, full-duplex communication between client and server
+  3. API Gateway creates RESTful APIs that enable stateless client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateful, full-duplex communication between client and server
+  4. API Gateway creates RESTful APIs that enable stateful client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateful, full-duplex communication between client and server
+</details>
+
+<details>
+<summary> <b>Question-28</b>: A company is in the process of migrating its on-premises SMB file shares to AWS so the company can get out of the business of managing multiple file servers across dozens of offices. The company has 200TB of data in its file servers. The existing on-premises applications and native Windows workloads should continue to have low latency access to this data without any disruptions after the migration. The company also wants any new applications deployed on AWS to have access to this migrated data.</br>
+Which of the following is the best solution to meet this requirement?
+</summary>
+
+  1. Use Amazon Storage Gateway’s File Gateway to provide low-latency, on-premises access to fully managed file shares in Amazon FSx for Windows File Server. The applications deployed on AWS can access this data directly from Amazon FSx in AWS
+  2. Use Amazon FSx File Gateway to provide low-latency, on-premises access to fully managed file shares in Amazon FSx for Windows File Server. The applications deployed on AWS can access this data directly from Amazon FSx in AWS
+  3. Use Amazon FSx File Gateway to provide low-latency, on-premises access to fully managed file shares in Amazon EFS. The applications deployed on AWS can access this data directly from Amazon EFS
+  4. Use Amazon Storage Gateway’s File Gateway to provide low-latency, on-premises access to fully managed file shares in Amazon S3. The applications deployed on AWS can access this data directly from Amazon S3
+</details>
+
+<details>
+<summary> <b>Question-29</b>: A gaming company is developing a mobile game that streams score updates to a backend processor and then publishes results on a leaderboard. The company has hired you as an AWS Certified Solutions Architect Associate to design a solution that can handle major traffic spikes, process the mobile game updates in the order of receipt, and store the processed updates in a highly available database. The company wants to minimize the management overhead required to maintain the solution.</br>
+Which of the following will you recommend to meet these requirements?
+</summary>
+
+  1. Push score updates to an SNS topic, subscribe a Lambda function to this SNS topic to process the updates and then store these processed updates in a SQL database running on Amazon EC2
+  2. Push score updates to Kinesis Data Streams which uses a Lambda function to process these updates and then store these processed updates in DynamoDB
+  3. Push score updates to Kinesis Data Streams which uses a fleet of EC2 instances (with Auto Scaling) to process the updates in Kinesis Data Streams and then store these processed updates in DynamoDB
+  4. Push score updates to an SQS queue which uses a fleet of EC2 instances (with Auto Scaling) to process these updates in the SQS queue and then store these processed updates in an RDS MySQL database
+</details>
+
+<details>
+<summary> <b>Question-30</b>: An IT company wants to review its security best-practices after an incident was reported where a new developer on the team was assigned full access to DynamoDB. The developer accidentally deleted a couple of tables from the production environment while building out a new feature.</br>
+Which is the MOST effective way to address this issue so that such incidents do not reoccur?
+</summary>
+
+  1. The CTO should review the permissions for each new developer's IAM user so that such incidents don't recur
+  
+  2. Use permissions boundary to control the maximum permissions employees can grant to the IAM principals
+  3. Remove full database access for all IAM users in the organization
+  4. Only root user should have full database access in the organization
+</details>
+
+<details>
+<summary> <b>Question-31</b>: A company runs a data processing workflow that takes about 60 minutes to complete. The workflow can withstand disruptions and it can be started and stopped multiple times.</br>
+Which is the most cost-effective solution to build a solution for the workflow?
+</summary>
+
+  1. Use EC2 on-demand instances to run the workflow processes
+  
+  2. Use EC2 reserved instances to run the workflow processes 
+  3. Use EC2 spot instances to run the workflow processes 
+  4. Use AWS Lambda function to run the workflow processes
+</details>
+
+<details>
+<summary> <b>Question-32</b>: A leading social media analytics company is contemplating moving its dockerized application stack into AWS Cloud. The company is not sure about the pricing for using Elastic Container Service (ECS) with the EC2 launch type compared to the Elastic Container Service (ECS) with the Fargate launch type.</br>
+Which of the following is correct regarding the pricing for these two services?
+</summary>
+
+  1. ECS with EC2 launch type is charged based on EC2 instances and EBS volumes used. ECS with Fargate launch type is charged based on vCPU and memory resources that the containerized application requests
+  
+  2. Both ECS with EC2 launch type and ECS with Fargate launch type are charged based on EC2 instances and EBS volumes used
+  3. Both ECS with EC2 launch type and ECS with Fargate launch type are charged based on vCPU and memory resources that the containerized application requests
+  4. Both ECS with EC2 launch type and ECS with Fargate launch type are just charged based on Elastic Container Service used per hour
+</details>
+
+<details>
+<summary> <b>Question-33</b>: A US-based healthcare startup is building an interactive diagnostic tool for COVID-19 related assessments. The users would be required to capture their personal health records via this tool. As this is sensitive health information, the backup of the user data must be kept encrypted in S3. The startup does not want to provide its own encryption keys but still wants to maintain an audit trail of when an encryption key was used and by whom.</br>
+Which of the following is the BEST solution for this use-case?
+</summary>
+
+  1. Use SSE-S3 to encrypt the user data on S3
+  
+  2. Use SSE-KMS to encrypt the user data on S3
+  3. Use SSE-C to encrypt the user data on S3
+  4. Use client-side encryption with client provided keys and then upload the encrypted user data to S3
+</details>
+
+<details>
+<summary> <b>Question-34</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-19</b>:
+<summary> <b>Question-35</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-20</b>:
+<summary> <b>Question-36</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-21</b>:
+<summary> <b>Question-37</b>:
 </summary>
 </details>
 
 <details>
-<summary> <b>Question-22</b>:
+<summary> <b>Question-38</b>:
 </summary>
 </details>
 
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
+
+<details>
+<summary> <b>Question-38</b>:
+</summary>
+</details>
