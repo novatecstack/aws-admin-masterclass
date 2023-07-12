@@ -122,7 +122,7 @@ In this course, you will learn how to deploy, manage and operate workloads on AW
   
  *  Networking Primer – IP Addressing, CIDR, OSI Layers
    
- *  Introduction to <b>*Virtual Private Gateway*</b> service
+ *  Introduction to <b>*Virtual Private Cloud*</b> service
  *  Exploring other networking services:
     - <b>*Network Interface*</b>
     - <b>*Route Tables*</b>
