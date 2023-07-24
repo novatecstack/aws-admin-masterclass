@@ -17,11 +17,18 @@
 ## What is Virtualization? 
 
    - <b>*What is Hypervisor?*</b>
-   
+     - A hypervisor is a form of virtualization software used in Cloud hosting to divide and allocate the resources on various pieces of hardware.
+     - The program which provides partitioning, isolation, or abstraction is called a virtualization hypervisor.
    - <b>*Types of Hypervisor*</b>
+     - Type-1 Hypervisor
+     - Type-2 Hypervisor
 
 ## Overview of Amazon Web Services (AWS)
-
+   - Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand public cloud computing platforms and APIs.
+   - These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity
+   - These web-services can be used to develop and host real world applications
+   - In November 2004, AWS launched its first infrastructure service for public usage: Simple Queue Service (SQS)
+     
 ## AWS Global Infrastructure
    - AWS Data Centers
    - AWS Regions
@@ -49,7 +56,7 @@
    - Save when you submit
    - Pay less by using more
    
-## [The six Pillars of the AWS Well-Architected Framework](https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/)
+## [The six pillars of the AWS Well-Architected Framework](https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/)
    1. Reliability
    2. Operational Excellence
    3. Security
