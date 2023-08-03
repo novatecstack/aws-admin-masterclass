@@ -172,61 +172,6 @@
   *  For example, if an employee needs only access to a specific EC2 instance, specify the instance in the IAM policy rather than granting an employee access to every instance in your AWS account. 
 </details>
 
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-<details>
-<summary>
-  Question-01: 
-</summary>
-</details>
-
-
 ## Interview Questions for Intermediate & Experienced
 <details>
 <summary>
