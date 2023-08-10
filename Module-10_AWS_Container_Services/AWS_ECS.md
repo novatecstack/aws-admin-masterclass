@@ -11,37 +11,39 @@
      - **Controller** - Deploy and manage your applications that run on the containers.
      - **Provisioning** - The tools that you can use to interface with the scheduler to deploy and manage your applications and containers
 
-## 2. Understand about Services, Tasks and Access Application
+## 2. Understand various features of ECS Cluster
 
-### 2.1 Services
+### [2.1 Services](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html)
+A *Service* allows you to run and maintain a specified number of simultaneous instances of a task defination in an ECS cluster.
 
-### 2.2 Tasks
+### [2.2 Tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
+A *Task* is an instance of Task defination. A task defination is a blue print of your application.
 
-### 2.3 Application Access
+### 2.3 ECS Instances
+EC2 instances which gets created when you create an EC2 type ECS cluster.
+
+### 2.4 Metrics 
+Cloudwatch container insights collects and aggregates metrics, logs from your containerized applications.
+
+### 2.5 Scheduled Tasks
+
+### 2.6 Tags
+
+### 2.7 Capacity Providers
 
 ## 3. Application Lifecycle
    <img src="images/ecs-lifecycle.png" width="550" height="320">
 
-## 3. ECS Cluster Types
-   - There are three types of ECS clusters namely:
-     1) Fargate clusters (serverless)
-     2) ECS EC2 - Linux cluster
-     3) ECS EC2 - Windows cluster
+## 4. ECS Cluster Types
+There are three types of ECS clusters namely:
+   1) Fargate clusters (serverless)
+   2) ECS EC2 - Linux cluster
+   3) ECS EC2 - Windows cluster
+
      
-## 4. Hands-on Lab: Create an Amazon ECS cluster
+## 5. Hands-on Lab: Create an Amazon ECS cluster
    - Lab-01: Create an ECS cluster of type `EC2 Linux cluster`
    - Lab-02: Create an ECS cluster of type `Fargate`
-
-## 5. Understaning various features of ECS cluster
-   - **Services**: A *Service* allows you to run and maintain a specified number of simultaneous instances of a task defination in an ECS cluster.
-   - **Tasks**: A *Task* is an instance of Task defination. A task defination is a blue print of your application.
-   - **ECS Instances**: EC2 instances which gets created when you create an EC2 type ECS cluster.
-   - **Metrics**: Cloudwatch container insights collects and aggregates metrics, logs from your containerized applications 
-   - **Scheduled Tasks**
-   - **Tags**
-   - **Capacity Providers**
-   - **Update Cluster**
-   - **Delete Cluster**
 
 ## 6. Understanding Task Definition
    - A `task definition` is a blueprint for your application. 
@@ -58,8 +60,23 @@
 
 ## 7. Hands-on Lab: Create a Task Definition
 
-## 8. Hands-on Lab: Create a Service
+## [8. Hands-on Lab: Create a Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-service-console-v2.html)
 
 ## 9. Hands-on Lab: Create a Task based on the Task-definition created in #7
 
-## [10. Amazon ECS Pricing](https://aws.amazon.com/ecs/pricing)
+## 10. Hands-on Lab: Accessing application running in ECS cluster
+
+## 11. Amazon ECS Deployment Types
+   - An Amazon ECS deployment type determines the deployment strategy that your service uses. 
+   - There are three deployment types:
+     1) [Rolling Update](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html)
+     2) [Blue-Green deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html)
+     3) [External Deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html)
+
+## [12. Service Load balancing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html)
+
+## [13. Service Autoscaling](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html)
+
+## [14. Amazon ECS Pricing](https://aws.amazon.com/ecs/pricing)
+
+## [15. References](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
