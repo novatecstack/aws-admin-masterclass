@@ -2,7 +2,7 @@
 
 This sample project demonstrate how you can automatically build and deploy java springboot application using AWS Developer services.
 
-## Create Appspec.yml file for EC2 Deployment (Springboot)
+## Create `appspec.yml` file for EC2 Deployment (Springboot)
 
 ```
 version: 0.0
