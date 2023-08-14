@@ -1,7 +1,0 @@
-endpoints:
-  enabled: false
-  health:
-    enabled: true
-
-logging:
-  file: server.log
