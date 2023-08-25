@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "This CFN template is for CFN Parameters demonstration"
+
+Parameters:
+  EC2Name:
+    Type: String
+    Description: Please enter the Name of EC2 Instance
+  InstanceSize:
+    Type: String
+    Description: Size of the EC2 Instance
+    AllowedValues:
+      - t2.micro
+      - m1.small
+      - m1.large
+
+Resources:
+  NovaEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-08a52ddb321b32a8c
+      InstanceType: !Ref InstanceSize
+      Tags:
+        - Key: Name
+          Value: !Ref EC2Name
+
+Outputs:
+  EC2DNSName:
+    Value: !GetAtt NovaEC2Instance.PublicDnsName
+    Description: This is public dns name of ec2 instance
+  EC2PublicIP:
+    Value: !GetAtt NovaEC2Instance.PublicIp
+    Description: Public IP of instance

@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "This CFN template is for AWS resource creation"
+
+Resources:
+  NovaEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-08a52ddb321b32a8c
+      InstanceType: t2.micro
+      SecurityGroupIds:
+        - !Ref WebServersSG
+      Tags:
+        - Key: "Name"
+          Value: "DockerHost"
+  WebServersSG:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: This SG is for Nova WebServers
+      GroupName: NovaWebServersSG
+      SecurityGroupIngress: 
+        - CidrIp: 0.0.0.0/0
+          FromPort: 22
+          ToPort: 22
+          IpProtocol: tcp
+      Tags: 
+        - Key: NovaWebServersSG
+          Value: NovaWebServersSG
+      VpcId: vpc-2e711a53
+
