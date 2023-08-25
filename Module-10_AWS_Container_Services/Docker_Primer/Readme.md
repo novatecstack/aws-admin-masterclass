@@ -39,7 +39,7 @@
 ### Step-02: Connect to the EC2 Instance
 
 ### Step-03: Install and Configure Docker
-    ```
+   ```
     # Install docker (below command will work only on Amazon Linux 2 AMI)
     amazon-linux-extras install docker -y
 
@@ -51,7 +51,7 @@
 
     # Check the current installed version of Docker
     sudo docker version
-    ```
+   ```
 
 ## Working with Docker Containers
 
