@@ -115,10 +115,11 @@
    - For **example**, to build a web server image, start with an image that includes Ubuntu Linux (a base OS). Then, add packages like Apache and PHP on top. And then finally add your application code to it.
 
 ### What is `Dockerfile`? | Structure of Dockerfile
-    - You can manually build custom images using a **Dockerfile**, a text document containing all the instructions to create a Docker image.
-    -  It includes all the required dependencies and components to run an application.
-    - You can also pull images from a central repository called a **registry**, or from repositories like *Docker Hub*.
-    - [Structure of Dockerfile](https://docs.docker.com/engine/reference/builder/)
+   - You can manually build custom images using a **Dockerfile**, a text document containing all the instructions to create a Docker image.
+   -  It includes all the required dependencies and components to run an application.
+   - You can also pull images from a central repository called a **registry**, or from repositories like *Docker Hub*.
+   - [Structure of Dockerfile](https://docs.docker.com/engine/reference/builder/)
+   
    ```
     FROM
     MAINTAINER
