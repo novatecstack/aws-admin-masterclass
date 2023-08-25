@@ -56,21 +56,21 @@
 ## Working with Docker Containers
 
 ### Pull the Docker Image 
-    ```
+   ```
     # Syntax
     docker pull [image_name]
 
     # Example
     docker pull nginx:latest
 
-    ```
+   ```
 ### List all the Docker images (present on DockerHost)
-    ```
+   ```
     docker images
 
-    ```
+   ```
 ### Create a Container
-    ```
+   ```
     # Syntax
     docker run [OPTIONS] [IMAGE_NAME] [Command]
 
@@ -80,28 +80,28 @@
     # Example-02
     docker run -d --name webcontainer -p 80:80 nginx:latest
 
-    ```
+   ```
 ### List all the containers
-    ```
+   ```
     # List all the running containers
     docker ps
 
     # List all the containers irrespective of their states
     docker ps -a
     
-    ```
+   ```
 ### Stop a Container
-    ```
+   ```
     docker stop [CONTAINER_NAME OR CONTAINER_ID]
 
-    ```
+   ```
 ### Delete a Container
-    ```
+   ```
     docker rm [CONTAINER_NAME OR CONTAINER_ID]
 
     docker kill [CONTAINER_NAME OR CONTAINER_ID]
 
-    ```
+   ```
 ## What is a `Container registry`? | DockerHub
    - A *container registry* essentially acts as a place for developers to store container images and share them out with other users and application.
    - You can pull the images from container registry and deploy an application on various compute platforms (e.g. ECS, EKS etc.) in the form of containers.
@@ -119,7 +119,7 @@
     -  It includes all the required dependencies and components to run an application.
     - You can also pull images from a central repository called a **registry**, or from repositories like *Docker Hub*.
     - [Structure of Dockerfile](https://docs.docker.com/engine/reference/builder/)
-    ```
+   ```
     FROM
     MAINTAINER
     WORKDIR
@@ -132,22 +132,22 @@
     USER
     ENTRYPOINT
 
-    ```
+   ```
 
 ### Create a custom docker image
-    ```
+   ```
     # Syntax
     docker build -t [IMAGE_NAME] . # Here the dot specifies the current dir location
     
     # Example
     docker build -t binwebapp .
 
-    ```
+   ```
 ### Push the custom image to Registry (DockerHub)
    - In order to push the image to registry, you must have a valid Docker Hub account.
    - You may create a [new DockerHub account by signing-up here >> ](https://hub.docker.com/)
 
-    ```
+   ```
     # Connect to docker registry (DockerHub) by entering you dockerHub credentials
     docker login
     
@@ -160,6 +160,6 @@
     # Push the image to Docker Hub
     docker push kbindesh/binwebapp:v1
 
-    ```
+   ```
 ## [References](https://docs.docker.com)
    
